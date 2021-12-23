@@ -1,0 +1,11 @@
+query products($text_productId: Float!) {
+  products(id: $text_productId) {
+    id
+    name
+    price
+    categoryId
+    categorys {
+      name
+    }
+  }
+}

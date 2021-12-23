@@ -1,0 +1,12 @@
+mutation createCategory(
+  $text_name: String!
+) {
+  createCategory(
+    input: {
+      name: $text_name
+    }
+  ) {
+    id
+    name
+  }
+}

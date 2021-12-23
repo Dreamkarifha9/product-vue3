@@ -1,0 +1,17 @@
+mutation createProduct(
+  $text_name: String!
+  $text_price: Float!
+  $text_categoryId: Float!
+) {
+  createProduct(
+    input: {
+      name: $text_name
+      price: $text_price
+      categoryId: $text_categoryId
+    }
+  ) {
+    name
+    price
+    categoryId
+  }
+}

@@ -1,0 +1,8 @@
+mutation deleteProduct(
+  $text_productId: Float!
+) {
+  deleteProduct(id:$text_productId) {
+    id
+    name
+  }
+}
